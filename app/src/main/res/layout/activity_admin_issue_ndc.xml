@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".AdminIssueNDC">
+
+
+    <LinearLayout
+        android:id="@+id/layoutcreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ISSUE NO DUE CERTIFICATE"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="@drawable/text_input_back"
+            android:layout_marginTop="10dp"
+            android:id="@+id/editCardNo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Card No."
+                android:inputType="number"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/buttonCreateNDC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Create No Due Certificate"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutpreviewndc"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/text_input_back"
+        android:padding="10dp">
+
+
+    <LinearLayout
+android:id="@+id/layoutndc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="24dp">
+
+        <!-- College Header -->
+        <TextView
+            android:id="@+id/college_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Government Polytechnic Gondia"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/college_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fulchur Peth, Goregaon Road, Gondia."
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#74000000"/>
+
+
+
+
+        <!-- Title of the certificate -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Library – No Due Certificate"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Certification Statement -->
+        <TextView
+            android:id="@+id/textcert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is to certify that Mr./Ms. ........................, Enrollment No. ........................
+Library Member ID ...................... Student of ............................................ Department
+has returned all the books and non-books borrowed from the Library. He/she owes
+no due to the Library."
+            android:lineHeight="25dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!-- Date Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="................."
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonPrintNDC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Print No Due Certificate"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background" />
+
+
+    </LinearLayout>
+</LinearLayout>

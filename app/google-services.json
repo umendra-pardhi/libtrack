@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "712781154625",
+    "firebase_url": "https://lib-track-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "lib-track",
+    "storage_bucket": "lib-track.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712781154625:android:9a457607698c3fa09b79c0",
+        "android_client_info": {
+          "package_name": "com.libtrack.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5o7Llps_Ta5ZGfFUxQMSHMVvvjBjkV2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
