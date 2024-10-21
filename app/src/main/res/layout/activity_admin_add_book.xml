@@ -75,15 +75,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="10dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/text_input_back"
                 android:orientation="vertical">
 
             <Spinner
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="35dp"
                 android:id="@+id/spinner1" >
             </Spinner>
 </LinearLayout>
