@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,19 +23,34 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Re-ISSUE BOOK"
+                android:text="RE-ISSUE BOOK"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textSize="22dp"
                 android:textColor="@color/colorPrimary"
                 />
 
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimati"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                app:lottie_rawRes="@raw/issuebook"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/text_input_back"
+            android:orientation="vertical">
             <Spinner
-                android:layout_marginTop="30dp"
                 android:id="@+id/spinner4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
             </Spinner>
+        </LinearLayout>
 
             <Button
                 android:layout_marginTop="20dp"
@@ -52,4 +67,4 @@
     </ScrollView>
 
 
-</RelativeLayout>
+</LinearLayout>

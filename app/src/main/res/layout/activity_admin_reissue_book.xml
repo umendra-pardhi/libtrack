@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
-                android:text="Re-ISSUE BOOK"
+                android:text="RE-ISSUE BOOK"
                 android:gravity="center"
                 android:layout_marginBottom="15dp"
                 android:textSize="25dp"/>
@@ -33,7 +33,7 @@
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/lottieAnimati"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="180dp"
                 app:lottie_rawRes="@raw/issuebook"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"/>

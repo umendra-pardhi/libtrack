@@ -83,7 +83,6 @@ public class AdminReturnBook extends AppCompatActivity {
         }
     }
 
-
     private boolean getUser() {
         db.collection("User").whereEqualTo("card", Integer.parseInt(editCardNo2.getEditText().getText().toString().trim())).get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
@@ -105,14 +104,11 @@ public class AdminReturnBook extends AppCompatActivity {
                     p.cancel();
                     Toast.makeText(AdminReturnBook.this, "Try Again !", Toast.LENGTH_SHORT).show();
                 }
-
-
             }
         });
 
         return res1;
     }
-
     private boolean getBook() {
         db.document("Book/" + Integer.parseInt(editBid4.getEditText().getText().toString().trim()) / 100).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -136,8 +132,7 @@ public class AdminReturnBook extends AppCompatActivity {
 
         return res2;
     }
-    
-    
+
     private void returnBook()
     {
 
@@ -148,7 +143,6 @@ public class AdminReturnBook extends AppCompatActivity {
         p.show();
         if (getUser()&getBook())
         {
-
 
             if(!U.getBook().contains(Integer.parseInt(editBid4.getEditText().getText().toString().trim())))
             {

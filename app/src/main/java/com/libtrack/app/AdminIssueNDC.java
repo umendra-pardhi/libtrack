@@ -73,8 +73,6 @@ public class AdminIssueNDC extends AppCompatActivity {
                     return;
                 }
                getUser();
-
-
             }
         });
 //print NDC
@@ -84,11 +82,9 @@ public class AdminIssueNDC extends AppCompatActivity {
                 generateNDCPdf();
             }
         });
-
     }
 
     //crete certificate
-
     public void createCertificate(){
         layoutpreviewndc.setVisibility(View.VISIBLE);
         String certdata="This is to certify that Mr./Ms. "+U.getName()+", Enrollment No. "+U.getEnroll()+"\n" +
@@ -104,7 +100,6 @@ public class AdminIssueNDC extends AppCompatActivity {
             String formattedDate = date1.format(formatter);
             date.setText(formattedDate);
         }
-
     }
 
 //generate pdf
@@ -113,7 +108,7 @@ public class AdminIssueNDC extends AppCompatActivity {
                 .setContext(AdminIssueNDC.this)
                 .fromViewIDSource()
                 .fromViewID(AdminIssueNDC.this, R.id.layoutndc)
-                .setFileName("Library No Due Certificate")
+                .setFileName("Library_No_Due_Certificate")
                 .actionAfterPDFGeneration(PdfGenerator.ActionAfterPDFGeneration.SHARE)
                 .savePDFSharedStorage(xmlToPDFLifecycleObserver)
                 .build(new PdfGeneratorListener() {
@@ -175,10 +170,8 @@ public class AdminIssueNDC extends AppCompatActivity {
                 }
             }
         });
-
         return res1;
     }
-
 
     private boolean verifyCard() {
         String t = editCardNo.getEditText().getText().toString().trim();
